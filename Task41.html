@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let magician_names = [
+        "Samiullah",
+        "Hameedullah",
+        "Abdullah",
+        "Zuhaib",
+        "Tufail",
+      ];
+      function show_magicians(magicians) {
+        for (let i = 0; i < magicians.length; i++) {
+          console.log(magicians[i]);
+        }
+      }
+
+      function make_great(magicians) {
+        for (let i = 0; i < magicians.length; i++) {
+          magicians[i] += " the Great";
+        }
+      }
+
+      make_great(magician_names);
+
+      show_magicians(magician_names);
+    </script>
+  </body>
+</html>
