@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function make_album(artist, title, tracks) {
+        let album = {
+          artist: artist,
+          title: title,
+        };
+
+        if (tracks) {
+          album["tracks"] = tracks;
+        }
+
+        return album;
+      }
+
+      let album1 = make_album("Linkin Park", "Meteora");
+      let album2 = make_album("Ed Sheeran", "Divide", 12);
+      let album3 = make_album("Taylor Swift", "1989");
+
+      console.log(album1);
+      console.log(album2);
+      console.log(album3);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let dinnerGuests = [
+        "Samiullah",
+        "zuhaib",
+        "Hameedullah",
+        "Abdullah",
+        "Mohid",
+        "Rafay",
+        "Ahmad",
+      ];
+
+      console.log(
+        "Unfortunately, the new dinner table won't arrive in time, so I can only invite two people for dinner."
+      );
+
+      while (dinnerGuests.length > 2) {
+        var removedGuest = dinnerGuests.pop();
+        console.log(
+          "Sorry, " + removedGuest + ", I can't invite you to dinner."
+        );
+      }
+
+      for (var i = 0; i < dinnerGuests.length; i++) {
+        console.log(
+          "Dear " +
+            dinnerGuests[i] +
+            ",\n\nYou're still invited to dinner.\n\nBest regards,\nSamiullah"
+        );
+      }
+
+      dinnerGuests.pop();
+      dinnerGuests.pop();
+
+      console.log("Updated list after removing all guests:", dinnerGuests);
+    </script>
+  </body>
+</html>

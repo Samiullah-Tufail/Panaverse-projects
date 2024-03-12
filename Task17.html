@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let placesToVisit = ["Lahore", "Islamabad", "Abotabad", "Muree", "Gujranwala"];
+
+      console.log("Original order:", placesToVisit);
+
+      console.log("Alphabetical order:", placesToVisit.slice().sort());
+
+
+      console.log("Original order (still intact):", placesToVisit);
+
+      console.log(
+        "Reverse alphabetical order:",
+        placesToVisit.slice().sort().reverse()
+      );
+
+      console.log("Original order (still intact):", placesToVisit);
+
+      placesToVisit.reverse();
+      console.log("Reversed order:", placesToVisit);
+
+      placesToVisit.reverse();
+      console.log("Back to original order:", placesToVisit);
+
+      placesToVisit.sort();
+      console.log("Sorted in alphabetical order:", placesToVisit);
+
+      placesToVisit.sort().reverse();
+      console.log("Sorted in reverse alphabetical order:", placesToVisit);
+    </script>
+  </body>
+</html>
